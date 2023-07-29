@@ -1,9 +1,12 @@
 {
-  "name": "weather-cli",
+  "name": "ultrooleg-weather-cli",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "type": "module",
+  "bin": {
+    "weather": "weather.js"
+  },
   "engines": {
     "node": ">14"
   },
@@ -20,5 +23,10 @@
   "repository": {
     "type": "git",
     "url": "https://www.youtube.com"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^5.3.0",
+    "dedent-js": "^1.0.1"
   }
 }
